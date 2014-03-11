@@ -19,7 +19,9 @@ library
   exposed-modules:    Language.Polyglot
   -- other-modules:
   -- other-extensions:
-  build-depends:       base >=4.7 && <4.8
+  build-depends:       base >=4.7 && <4.8,
+                       text,
+                       containers
   -- hs-source-dirs:
   default-language:    Haskell2010
 
@@ -30,5 +32,5 @@ test-suite tests
   main-is:         Spec.hs
   default-language:    Haskell2010
   build-depends:   base <5,
-                   polyglot
+                   polyglot,
                    hspec
